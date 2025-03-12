@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="#000000"
+     android:orientation="horizontal">
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="300dp"
+         android:visibility="gone"
+         android:orientation="vertical"
+         android:id="@+id/liner">
+
+        <ImageView
+             android:layout_height="100dp"
+             android:layout_width="100dp"
+             android:layout_marginBottom="30dp"
+             android:layout_marginTop="20dp"
+             android:layout_gravity="center_horizontal" />
+
+        <Switch
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:background="#afffff"
+             android:layout_margin="20dp"
+             android:padding="5dp"
+             android:textColor="#000000"
+             android:text="MULAI SERVER"
+             android:id="@+id/mulaiServer" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center"
+             android:background="#afffff"
+             android:padding="5dp"
+             android:layout_margin="20dp"
+             android:textColor="#000000"
+             android:textIsSelectable="true"
+             android:id="@+id/alamat" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center"
+             android:background="#afffff"
+             android:padding="5dp"
+             android:layout_margin="20dp"
+             android:textColor="#000000"
+             android:id="@+id/pengguna" />
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:orientation="vertical">
+
+        <LinearLayout
+             android:layout_height="70dp"
+             android:layout_width="match_parent"
+             android:background="#ff6666"
+             android:gravity="center_vertical"
+             android:orientation="horizontal">
+
+            <ImageView
+                 android:layout_height="50dp"
+                 android:layout_width="50dp"
+                 android:src="@drawable/nav"
+                 android:layout_marginEnd="50dp"
+                 android:id="@+id/nav" />
+
+            <ImageView
+                 android:layout_height="30dp"
+                 android:layout_width="30dp"
+                 android:src="@drawable/tf_folder"
+                 android:layout_marginEnd="20dp"
+                 android:background="#afffff"
+                 android:id="@+id/tfFolder" />
+
+            <ImageView
+                 android:layout_height="30dp"
+                 android:layout_width="30dp"
+                 android:src="@drawable/tf_file"
+                 android:layout_marginEnd="20dp"
+                 android:background="#afffff"
+                 android:id="@+id/tfFile" />
+
+            <ImageView
+                 android:layout_height="30dp"
+                 android:layout_width="30dp"
+                 android:src="@drawable/folder_baru"
+                 android:layout_marginEnd="20dp"
+                 android:background="#afffff"
+                 android:id="@+id/folderBaru" />
+
+            <ImageView
+                 android:layout_height="30dp"
+                 android:layout_width="30dp"
+                 android:src="@drawable/file_baru"
+                 android:layout_marginEnd="20dp"
+                 android:background="#afffff"
+                 android:id="@+id/fileBaru" />
+
+            <ImageView
+                 android:layout_height="30dp"
+                 android:layout_width="30dp"
+                 android:src="@drawable/kembali"
+                 android:layout_marginEnd="20dp"
+                 android:background="#afffff"
+                 android:id="@+id/kembali" />
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="40dp"
+             android:layout_width="match_parent"
+             android:visibility="gone"
+             android:gravity="center"
+             android:background="#400333"
+             android:layout_margin="5dp"
+             android:id="@+id/lama">
+
+            <ImageView
+                 android:layout_height="30dp"
+                 android:layout_width="30dp"
+                 android:layout_marginEnd="20dp"
+                 android:src="@drawable/salin"
+                 android:id="@+id/salin" />
+
+            <ImageView
+                 android:layout_height="30dp"
+                 android:layout_width="30dp"
+                 android:layout_marginEnd="20dp"
+                 android:src="@drawable/potong"
+                 android:id="@+id/potong" />
+
+            <ImageView
+                 android:layout_height="30dp"
+                 android:layout_width="30dp"
+                 android:layout_marginEnd="20dp"
+                 android:src="@drawable/hapus"
+                 android:id="@+id/hapus" />
+
+            <ImageView
+                 android:layout_height="30dp"
+                 android:layout_width="30dp"
+                 android:layout_marginEnd="20dp"
+                 android:src="@drawable/rename"
+                 android:id="@+id/rename" />
+
+            <ImageView
+                 android:layout_height="30dp"
+                 android:layout_width="30dp"
+                 android:visibility="gone"
+                 android:layout_marginEnd="20dp"
+                 android:src="@drawable/tempel"
+                 android:id="@+id/tempel" />
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:background="#444444"
+             android:layout_margin="10dp"
+             android:orientation="vertical">
+
+            <ScrollView
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent">
+
+                <GridLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:orientation="horizontal"
+                     android:layout_gravity="center_horizontal"
+                     android:id="@+id/grid"
+                     android:columnCount="3">
+
+                </GridLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
